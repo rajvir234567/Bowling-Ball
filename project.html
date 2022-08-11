@@ -11,7 +11,10 @@
     <a-scene id="scene">
 
       <!--Assets-->
-
+      <a-assets>
+        <a-asset-item id="pin" src="./models/bowling_pin/scene.gltf">
+        </a-asset-item>
+        </a-assets>
       
       <!--Light-->
       <a-entity light="type: ambient; color: yellow; intensity:0.5"></a-entity>
@@ -36,7 +39,7 @@
       <a-plane
         id="ground"
         repeat="5 5"
-        position="0 1 0"
+        position="0 1 2"
         rotation="-90 0 0"
         height="200"
         width="200"
@@ -46,26 +49,28 @@
       >
       </a-plane>
 
-      <!--Boxes-->
-      <a-box position="-3 1.3 -10" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <!--Back Pins-->
+      <a-entity gltf-model="#pin" id="pin10" position="-0.8 1.3 -4" scale="4 4 4"></a-entity>
 
-      <a-box position="-1 1.3 -10" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin9" position="-0.2 1.3 -4" scale="4 4 4"></a-entity>
 
-      <a-box position="1 1.3 -10" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin8" position="0.2 1.3 -4" scale="4 4 4"></a-entity>
 
-      <a-box position="3 1.3 -10" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin7" position="0.8 1.3 -4" scale="4 4 4"></a-entity>
 
-      <a-box position="-1.5 1.3 -8" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <!--Middle Pins-->
+      <a-entity gltf-model="#pin" id="pin6" position="-0.5 1.3 -3" scale="4 4 4"></a-entity>
 
-      <a-box position="0 1.3 -8" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin5" position="0 1.3 -3" scale="4 4 4"></a-entity>
 
-      <a-box position="1.5 1.3 -8" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin4" position="0.5 1.3 -3" scale="4 4 4"></a-entity>
       
-      <a-box position="-0.5 1.3 -6" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin3" position="-0.2 1.3 -2" scale="4 4 4"></a-entity>
 
-      <a-box position="0.5 1.3 -6" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <a-entity gltf-model="#pin" id="pin2" position="0.2 1.3 -2" scale="4 4 4"></a-entity>
 
-      <a-box position="0 1.3 -4" color="tomato" depth="0.5" height="0.5" width="0.5"></a-box>
+      <!--Front Pin-->
+      <a-entity gltf-model="#pin" id="pin1" position="0 1.3 -1" scale="4 4 4"></a-entity>
     </a-scene>
   </body>
 </html>
